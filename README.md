@@ -26,7 +26,7 @@ lessons learned → what I'd do differently.
 - Notes: If you’re hiring for junior cloud/security roles, I’m documenting proof every
 week.
 
-** Project 1
+** Project 1 - Public Access Issue in AWS S3
 ## Problem Statement
 A public e-commerce site (CloudMart) experienced downtime when images stored in
 S3 became inaccessible due to misconfigured bucket permissions.
