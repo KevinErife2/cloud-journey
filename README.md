@@ -1,12 +1,12 @@
-# 🎓 LUIT Apache Snapshot & Disaster Recovery Lab
+# Apache Snapshot & Disaster Recovery Lab
 
-**Level Up In Tech (LUIT) - Terraform Learning Project**
+**Terraform Project**
 
 This project teaches Infrastructure as Code (IaC) using Terraform to deploy an Apache web server with automated snapshot backups and disaster recovery capabilities.
 
 ---
 
-## 📚 What You'll Learn
+## 📚 What I did
 
 - ✅ Deploy EC2 instances with Terraform
 - ✅ Install and configure Apache web server
