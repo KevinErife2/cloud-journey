@@ -1,0 +1,21 @@
+# terraform.tfvars.example
+# Copy this file to terraform.tfvars and fill in your actual values
+
+# AWS Settings
+aws_region = "us-east-1"
+
+# Find your AMI ID:
+# - Amazon Linux 2: aws ec2 describe-images --owners amazon --filters "Name=name,Values=amzn2-ami-hvm-*-x86_64-gp2" --query 'Images[0].ImageId'
+# - Ubuntu 22.04: aws ec2 describe-images --owners 099720109477 --filters "Name=name,Values=ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*" --query 'Images[0].ImageId'
+my_ami = "ami-xxxxxxxxxxxxxxxxx"  # REPLACE WITH YOUR AMI ID
+
+# Server Settings
+instance_type = "t3.micro"
+volume_size   = 20
+
+# Backup Settings
+snapshot_retention_count = 7        # Keep 7 days of snapshots
+snapshot_time            = "03:00"  # 3 AM UTC
+
+# Disaster Recovery (change to true when testing DR)
+disaster_recovery_mode = false

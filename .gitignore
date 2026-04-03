@@ -1,0 +1,43 @@
+# Terraform state files (contain sensitive info!)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Terraform variable files with secrets
+terraform.tfvars
+*.auto.tfvars
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Terraform directory
+.terraform/
+.terraform.lock.hcl
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# SSH keys
+*.pem
+*.pub
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Lambda zip files (we'll recreate these)
+lambda/*.zip
+
+# Backup files
+*.bak
